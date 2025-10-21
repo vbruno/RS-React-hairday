@@ -12,6 +12,7 @@ import MoonStarsIcon from "./assets/icons/Moon-Stars.svg?react"
 import SunHorizonIcon from "./assets/icons/Sun-Horizon.svg?react"
 import UserSquareIcon from "./assets/icons/User-Square.svg?react"
 import InputText from "./components/atomic/inputText"
+import IconButton from "./components/atomic/iconButton"
 
 function App() {
 
@@ -53,7 +54,9 @@ function App() {
         </div>
 
         {/* Button Icon */}
-        <div></div>
+        <div>
+          <IconButton icon={TrashIcon} />
+        </div>
       </div>
     </div>
   )
