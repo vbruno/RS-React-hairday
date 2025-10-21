@@ -1,4 +1,5 @@
 import Icon from "./components/atomic/icon"
+import Button from "./components/atomic/button"
 
 import CalenderIcon from "./assets/icons/Calender.svg?react"
 import CaretDownIcon from "./assets/icons/Caret-Down.svg?react"
@@ -13,7 +14,7 @@ import UserSquareIcon from "./assets/icons/User-Square.svg?react"
 function App() {
 
   return (
-    <div className="bg-gray-900 text-white h-screen">
+    <div className="bg-gray-800 text-white h-screen">
       <div className="flex justify-center items-center h-screen flex-col gap-2" >
 
         <div className="flex gap-3 flex-col">
@@ -25,6 +26,7 @@ function App() {
           <p className="text-text-sm" >Teste de font text sm</p>
         </div>
 
+        {/* Icons */}
         <div className="flex justify-center items-center gap-3">
           <Icon svg={CalenderIcon} />
           <Icon svg={CaretDownIcon} />
@@ -36,6 +38,15 @@ function App() {
           <Icon svg={SunHorizonIcon} />
           <Icon svg={UserSquareIcon} />
         </div>
+
+        {/* Button */}
+        <div className="flex gap-3">
+          <Button>agendar</Button>
+          <Button disabled>agendar</Button>
+        </div>
+
+        {/* Button Icon */}
+        <div></div>
       </div>
     </div>
   )
