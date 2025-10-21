@@ -1,5 +1,6 @@
 import Icon from "./components/atomic/icon"
 import Button from "./components/atomic/button"
+import Text from "./components/atomic/text"
 
 import CalenderIcon from "./assets/icons/Calender.svg?react"
 import CaretDownIcon from "./assets/icons/Caret-Down.svg?react"
@@ -17,13 +18,13 @@ function App() {
     <div className="bg-gray-800 text-white h-screen">
       <div className="flex justify-center items-center h-screen flex-col gap-2" >
 
+        {/* Tipografia */}
         <div className="flex gap-3 flex-col">
-          <p>Teste de font</p>
-          <p className="text-title-lg" >Teste de font title lg</p>
-          <p className="text-title-md" >Teste de font title md</p>
-          <p className="text-title-sm" >Teste de font title sm</p>
-          <p className="text-text-md" >Teste de font text md</p>
-          <p className="text-text-sm" >Teste de font text sm</p>
+          <Text variant={"title-lg"} >Teste de font title lg</Text>
+          <Text variant={"title-md"}>Teste de font title md</Text>
+          <Text variant={"title-sm"}>Teste de font title sm</Text>
+          <Text variant={"text-md"}>Teste de font text md</Text>
+          <Text variant={"text-sm"}>Teste de font text sm</Text>
         </div>
 
         {/* Icons */}

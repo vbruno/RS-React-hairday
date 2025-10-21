@@ -21,12 +21,14 @@ export default function Text({ as = "span", variant, className, children, ...pro
 const textVariants = cva("font-sans text-gray-400", {
   variants: {
     variant: {
-      "body-sm-bold": "text-sm leading-5 font-semibold",
-      "body-md": "text-base leading-6 font-normal",
-      "body-md-bold": "text-base leading-6 font-semibold",
+      "title-lg": "text-[2rem] font-bold leading-6",
+      "title-md": "text-[1rem] font-bold leading-6",
+      "title-sm": "text-[0.875rem] font-bold leading-5",
+      "text-md": "text-[1rem] font-normal leading-6",
+      "text-sm": "text-[0.875rem] font-normal leading-5",
     }
   },
   defaultVariants: {
-    variant: "body-md"
+    variant: "text-md"
   }
 })
