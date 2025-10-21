@@ -26,7 +26,7 @@ export default function Button({
 
   return (
     <button {...props} className={buttonVariants({ variant, size, disabled, className })}>
-      <Text variant={"body-md-bold"} className={buttonTextVariants({ variant })}>
+      <Text variant={"title-sm"} className={buttonTextVariants({ variant })}>
         {children}
       </Text>
     </button>
@@ -37,14 +37,14 @@ export default function Button({
 
 const buttonVariants = cva(`
     flex items-center justify-center cursor-pointer
-    transition rounded-lg group gap-2
+    rounded-lg group gap-2
   `, {
   variants: {
     variant: {
       primary: "bg-yellow hover:border-yellow-light hover:border-2"
     },
     size: {
-      md: "h-14 w-45 py-4 px-5"
+      md: "h-14 w-80 py-4 px-5"
     },
     disabled: {
       true: "opacity-30 pointer-events-none"
