@@ -11,6 +11,7 @@ import TrashIcon from "./assets/icons/Lixeira.svg?react"
 import MoonStarsIcon from "./assets/icons/Moon-Stars.svg?react"
 import SunHorizonIcon from "./assets/icons/Sun-Horizon.svg?react"
 import UserSquareIcon from "./assets/icons/User-Square.svg?react"
+import InputText from "./components/atomic/inputText"
 
 function App() {
 
@@ -44,6 +45,11 @@ function App() {
         <div className="flex gap-3">
           <Button>agendar</Button>
           <Button disabled>agendar</Button>
+        </div>
+
+        {/* InputText */}
+        <div>
+          <InputText />
         </div>
 
         {/* Button Icon */}
