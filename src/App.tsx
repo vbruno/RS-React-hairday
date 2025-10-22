@@ -13,9 +13,9 @@ import SunHorizonIcon from "./assets/icons/Sun-Horizon.svg?react"
 import UserSquareIcon from "./assets/icons/User-Square.svg?react"
 import InputText from "./components/atomic/inputText"
 import IconButton from "./components/atomic/iconButton"
+import InputSelectTime from "./components/atomic/inputSelectTime"
 
 function App() {
-
   return (
     <div className="bg-gray-800 text-white h-screen">
       <div className="flex justify-center items-center h-screen flex-col gap-2" >
@@ -56,6 +56,13 @@ function App() {
         {/* Button Icon */}
         <div>
           <IconButton icon={TrashIcon} />
+        </div>
+
+        {/* Input Select Time */}
+        <div className="flex gap-2">
+          <InputSelectTime timeValue="09:00" />
+          <InputSelectTime timeValue="12:00" selected />
+          <InputSelectTime timeValue="12:00" disabled />
         </div>
       </div>
     </div>
