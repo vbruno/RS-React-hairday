@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router"
-import PageComponents from "./styles/Pages/PageComponents"
-import PageHome from "./styles/Pages/PageHome"
+import PageComponents from "./Pages/PageComponents"
+import PageHome from "./Pages/PageHome"
 
 function App() {
   return (
