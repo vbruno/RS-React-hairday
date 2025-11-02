@@ -5,6 +5,7 @@ import CalenderIcon from "../assets/icons/Calender.svg?react"
 import CaretDownIcon from "../assets/icons/Caret-Down.svg?react"
 import Button from "../components/atomic/button";
 import InputText from "../components/atomic/inputText";
+import InputSelectTime from "../components/atomic/inputSelectTime";
 
 export default function PageHome() {
   return (
@@ -45,7 +46,7 @@ export default function PageHome() {
               variant={"title-md"}
               className="text-gray-200!"
             >Data</Text>
-            {/* Pseudo Componente DataPicker */}
+            {/* Pseudo Componente DataPicker [Preciso transformar isso em componentes] */}
             <div
               className={`
                   flex items-center justify-center
@@ -80,6 +81,53 @@ export default function PageHome() {
               variant={"title-md"}
               className="text-gray-200!"
             >Horários</Text>
+            <div
+              className="flex flex-col gap-2"
+            >
+              {/* Manhã */}
+              <div
+                className="flex flex-col gap-2"
+              >
+                <Text>Manhã</Text>
+                <div
+                  className="flex gap-2"
+                >
+                  <InputSelectTime timeValue="09:00" />
+                  <InputSelectTime timeValue="10:00" disabled />
+                  <InputSelectTime timeValue="11:00" />
+                  <InputSelectTime timeValue="12:00" />
+                </div>
+              </div>
+              {/* Tarde */}
+              <div
+                className="flex flex-col gap-2"
+              >
+                <Text>Tarde</Text>
+                <div
+                  className="flex gap-2"
+                >
+                  <InputSelectTime timeValue="13:00" disabled />
+                  <InputSelectTime timeValue="14:00" disabled />
+                  <InputSelectTime timeValue="15:00" />
+                  <InputSelectTime timeValue="16:00" disabled />
+                  <InputSelectTime timeValue="17:00" />
+                  <InputSelectTime timeValue="18:00" />
+                </div>
+              </div>
+              {/* Noite */}
+              <div
+                className="flex flex-col gap-2"
+              >
+                <Text>Noite</Text>
+                <div
+                  className="flex gap-2"
+                >
+                  <InputSelectTime timeValue="19:00" />
+                  <InputSelectTime timeValue="20:00" selected />
+                  <InputSelectTime timeValue="21:00" disabled />
+                </div>
+              </div>
+            </div>
           </div>
           {/* Cliente */}
           <div>
