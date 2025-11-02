@@ -19,7 +19,7 @@ export default function InputText({
       <Icon className="fill-yellow size-5" svg={UserIcon} />
       <input
         className={cx(
-          "outline-none text-gray-200!",
+          "outline-none text-gray-200! flex-1",
           textVariants(),
           className
         )}
