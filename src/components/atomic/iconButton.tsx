@@ -72,7 +72,8 @@ const iconButtonIconVariants = cva("transition", {
       primary: "fill-yellow group-hover:fill-yellow-dark",
     },
     size: {
-      sm: "size-8"
+      sm: "size-4",
+      md: "size-8"
     },
   },
   defaultVariants: {
