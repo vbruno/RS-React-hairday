@@ -10,7 +10,7 @@ function App() {
         <Route element={<LayoutMain />}>
           <Route index element={<PageHome />} />
         </Route>
-        <Route path="/components" element={<PageComponents />} />
+        <Route path="/list-components" element={<PageComponents />} />
       </Routes>
     </BrowserRouter>
   )
