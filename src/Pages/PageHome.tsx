@@ -2,7 +2,7 @@ import Text from "../components/atomic/text";
 import Button from "../components/atomic/button";
 import InputText from "../components/atomic/inputText";
 import InputSelectTime from "../components/atomic/inputSelectTime";
-import DatePicker from "../components/atomic/datePicker";
+import DatePicker from "../components/atomic/datePickerFake";
 import Icon from "../components/atomic/icon";
 import IconButton from "../components/atomic/iconButton";
 

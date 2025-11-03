@@ -14,6 +14,7 @@ import TrashIcon from "../assets/icons/Lixeira.svg?react"
 import MoonStarsIcon from "../assets/icons/Moon-Stars.svg?react"
 import SunHorizonIcon from "../assets/icons/Sun-Horizon.svg?react"
 import UserSquareIcon from "../assets/icons/User-Square.svg?react"
+import DatePicker from "../components/atomic/datePicker"
 
 export default function App() {
   return (
@@ -63,6 +64,11 @@ export default function App() {
           <InputSelectTime timeValue="09:00" />
           <InputSelectTime timeValue="12:00" selected />
           <InputSelectTime timeValue="12:00" disabled />
+        </div>
+
+        {/* DatePicker */}
+        <div>
+          <DatePicker />
         </div>
       </div>
     </div>
