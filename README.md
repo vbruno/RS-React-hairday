@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+# Hairday
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Protótipo de interface para a agenda de uma barbearia. A tela reúne um formulário de agendamento e uma visão dos atendimentos por período do dia.
 
-Currently, two official plugins are available:
+## O que explorar
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Seleção visual de horários e campos do formulário.
+- Agenda organizada em manhã, tarde e noite.
+- Página de componentes em `/list-components`.
 
-## React Compiler
+**Estado do projeto:** os horários, a data e os clientes exibidos são exemplos fixos. O botão de agendar não grava atendimentos; ainda não há API ou persistência. O projeto demonstra a interface e seus componentes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tecnologias
 
-## Expanding the ESLint configuration
+React, TypeScript, Vite, Tailwind CSS, React Router e componentes Radix UI.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Executar localmente
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Com Node.js e npm instalados:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm ci
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Abra o endereço exibido pelo Vite. Outros comandos disponíveis:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run lint
+npm run build
 ```
+
+## Estrutura
+
+- `src/Pages/PageHome.tsx`: tela principal da agenda.
+- `src/Pages/PageComponents.tsx`: exemplos dos componentes.
+- `src/components`: componentes de interface reutilizáveis.
+- `src/styles`: estilos e tema.
+
+## Autor
+
+[Bruno S Velho](https://github.com/vbruno)
